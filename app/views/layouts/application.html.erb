@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FirstApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <div id="container">
+		<div id="header">
+			
+			<h1>Night Shots</h1>
+		</div>
+		<div id="leftCol">
+			<div id="menu">
+				<ul>
+					<li><a href="#">NightPhoto</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">About</a></li>
+
+				</ul>
+			</div>
+
+		</div>
+		<div id="content">
+
+			<h3>Night photography </h3>
+			<p class="top">
+Night photography can capture spectacular nighttime landscapes with city lights and night skies full of stars. It’s also a great opportunity to experiment with different camera settings and equipment. Slow shutter speeds give you long exposure times, which allow you to capture star trails or light trails left by moving cars. To get the most out of your night shots, you’re going to need to plan ahead and know the settings of your camera inside and out.
+
+				<br />
+				
+			</p>
+			<ul class="magnify">
+				<li>
+				<a href="#"><img src="/assets/1.jpg" alt="description" /><img src="/assets/1.jpg" alt="description" class="preview" /></a>
+				</li>
+				<li>
+				<a href="#"><img src="/assets/2.jpg" alt="description" /><img src="/assets/2.jpg" alt="description" class="preview" /></a>
+				</li>
+				<li>
+				<a href="#"><img src="/assets/3.jpg" alt="description" /><img src="/assets/3.jpg" alt="description" class="preview" /></a>
+				</li>
+				<li>
+				<a href="#"><img src="/assets/4.jpg" alt="description" /><img src="/assets/4.jpg" alt="description" class="preview" /></a>
+				</li>
+			</ul>
+
+			<div class="block">
+				<p>
+					
+					<img src="/assets/4.jpg" alt="" class="float-left" width="100" height="75"/>
+					This is Sample pic to check details and Dynamic range of photo.
+				</p>
+				
+			</div>
+			<div class="block">
+				<p>
+					
+					<img src="/assets/1.jpg" alt="" class="float-right" width="100" height="75"/>
+					My Demo Photography @Night
+				</p>
+				
+			</div>
+
+		</div>
+		<div id="footer">
+			<hr />
+			 Copyright , Design by Pramod Pyati, Inc.
+
+		</div>
+	</div>
+  </body>
+</html>
